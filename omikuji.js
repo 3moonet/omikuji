@@ -2,10 +2,9 @@ var username;
 var userResult;
 
 username = prompt("お名前を教えてください。");
+document.getElementById("name").innerHTML = username;
 if (username == "") {
     document.getElementById("name").innerHTML = "名無し";
-} else {
-    document.getElementById("name").innerHTML = username;
 }
 
 var rand = Math.floor(Math.random() * 5);
